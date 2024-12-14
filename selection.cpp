@@ -27,14 +27,18 @@ void selection_sort(int arr[],int n)
 }
 int main()
 {
-int arr[]={23,10,11,32,11,12};
-int n= sizeof(arr)/sizeof(arr[0]);
-cout<<"before the selection sort : "<<endl;
-for(int i=0;i<n;i++)
-{
-    cout<<arr[i]<<" ";
-}
-cout<<endl;
-selection_sort(arr,n);
-return 0;
+    int n;
+    cout<<" enter the size of array : ";
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    selection_sort(arr,n);
+    cout<<" sorted array is :";
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
 }
